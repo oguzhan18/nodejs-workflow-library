@@ -1,9 +1,7 @@
 import { State } from './state';
 import { Transition } from './transition';
 import { Event } from './event';
-import { MemoryStorage } from './storage/MemoryStorage';
-import { MongoStorage } from './storage/MongoStorage';
-import { RedisStorage } from './storage/RedisStorage';
+import { RedisStorage } from '../storage/RedisStorage';
 import { WorkflowMonitor } from './monitoring';
 import { Webhook } from '../api/webhook';
 import { ConfigManager } from './configManager';
@@ -15,6 +13,8 @@ import { Translator } from '../i18n/translator';
 import { AuthManager } from '../security/authManager';
 import { Plugin, PluginManager } from './plugin';
 import { PerformanceOptimizer } from './performance';
+import {MemoryStorage} from "./storage";
+import {MongoStorage} from "../storage/mongoStorage";
 
 export class WorkflowManager {
   transitionToParallel(states: string[]) {

@@ -1,6 +1,6 @@
 {
   "name": "nodejs-workflow",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A Node.js library for managing workflows, inspired by Laravel Workflow.",
   "main": "dist/index.js",
   "scripts": {
